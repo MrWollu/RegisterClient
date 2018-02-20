@@ -12,6 +12,8 @@ import edu.uark.uarkregisterapp.commands.converters.ByteToUUIDConverterCommand;
 import edu.uark.uarkregisterapp.commands.converters.UUIDToByteConverterCommand;
 import edu.uark.uarkregisterapp.models.api.Product;
 
+
+//lets get it
 public class ProductTransition implements Parcelable {
 	private UUID id;
 	public UUID getId() {
