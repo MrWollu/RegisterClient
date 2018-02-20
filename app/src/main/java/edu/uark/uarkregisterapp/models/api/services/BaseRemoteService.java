@@ -269,3 +269,5 @@ abstract class BaseRemoteService {
 	private static final String BASE_URL = "https://uarkregserv.herokuapp.com/api/";
 //	private static final String BASE_URL = "https://uarkregservnodejs.herokuapp.com/api/";
 }
+
+//Testing commit change
