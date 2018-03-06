@@ -16,27 +16,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp"
-        android:text="@string/text_view_landing_welcome"/>
+        android:text="Welcome! Please log in"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
 
     <Button
-        android:id="@+id/button_list_products"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/button_create_Employee"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:onClick="createLoginButtonOnClick"
+        android:text="Log In"
+        android:textColor="@android:color/black"
+        android:textSize="8sp" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="2000dp"
+        android:layout_height="29dp"
+        android:layout_below="@+id/Employee_ID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="8sp" />
+
+    <EditText
+        android:id="@+id/Employee_ID"
+        android:layout_width="2000dp"
+        android:layout_height="29dp"
+        android:layout_alignStart="@+id/Password"
         android:layout_below="@+id/text_view_welcome"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="@string/button_all_products"
-        android:onClick="displayAllProductsButtonOnClick"/>
-
-    <Button
-        android:id="@+id/button_create_product"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_list_products"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="@string/button_create_product"
-        android:onClick="createProductButtonOnClick"/>
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:singleLine="false"
+        android:text="Employee ID"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="8sp" />
 
 </RelativeLayout>
