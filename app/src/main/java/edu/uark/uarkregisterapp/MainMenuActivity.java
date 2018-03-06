@@ -11,6 +11,8 @@ import android.support.design.widget.Snackbar;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import edu.uark.uarkregisterapp.R;
+
 public class MainMenuActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
@@ -31,7 +33,7 @@ public class MainMenuActivity extends AppCompatActivity implements View.OnClickL
         sales_report_cashier.setOnClickListener(this);
 
     }
-
+    //Logan Campbell
     private void OnClick(View v) {
         /* do button stuff */
 
