@@ -46,7 +46,7 @@ public class EmpoyeeService extends BaseRemoteService {
 			ArrayList<Employee> employees = new ArrayList<>(rawJsonArray.length());
 			for (int i = 0; i < rawJsonArray.length(); i++) {
 				try {
-					employees.add((new Product()).loadFromJson(rawJsonArray.getJSONObject(i)));
+					employees.add((new Employee()).loadFromJson(rawJsonArray.getJSONObject(i)));
 				} catch (JSONException e) {
 					Log.d("GET EMPLOYEES", e.getMessage());
 				}
@@ -64,7 +64,7 @@ public class EmpoyeeService extends BaseRemoteService {
 		return this.readEmployeeDetailsFromResponse(
 			this.<Employee>performPutRequest(
 				this.buildPath(employee.getId())
-				, Employee.convertToJson()//product.
+				, Employee.convertToJson()
 			)
 		);
 	}
