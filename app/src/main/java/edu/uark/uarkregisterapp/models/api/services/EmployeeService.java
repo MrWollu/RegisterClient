@@ -16,7 +16,8 @@ import edu.uark.uarkregisterapp.models.api.enums.ApiObject;
 import edu.uark.uarkregisterapp.models.api.enums.EmployeeApiMethod;
 import edu.uark.uarkregisterapp.models.api.interfaces.PathElementInterface;
 
-public class EmpoyeeService extends BaseRemoteService {
+public class EmployeeService extends BaseRemoteService {
+    //@Override
 	public ApiResponse<Employee> getEmployee(UUID employeeId, String password ) {
 		return this.readEmployeeDetailsFromResponse(
 			this.<Employee>performGetRequest(
@@ -64,7 +65,7 @@ public class EmpoyeeService extends BaseRemoteService {
 		return this.readEmployeeDetailsFromResponse(
 			this.<Employee>performPutRequest(
 				this.buildPath(employee.getId())
-				, Employee.convertToJson()
+				, employee.convertToJson()
 			)
 		);
 	}
@@ -100,3 +101,6 @@ public class EmpoyeeService extends BaseRemoteService {
 
 	public EmployeeService() { super(ApiObject.EMPLOYEE); }
 }
+
+	//public ProductService() { super(ApiObject.PRODUCT); }
+//}
